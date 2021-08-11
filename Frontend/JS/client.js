@@ -1,11 +1,11 @@
 
-const socket = io("https://api.example.com", {
+const socket = io("https://hghghgjghg.herokuapp.com/", {
   withCredentials: true,
   extraHeaders: {
     "my-custom-header": "abcd"
   }
 });
-
+//const socket = io('https://hghghgjghg.herokuapp.com/');
 
 const form = document.getElementById('send-container');
 const messageInput = document.getElementById('messageInp');
