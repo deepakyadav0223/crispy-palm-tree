@@ -1,6 +1,8 @@
 // node server which will handle socket io connections
 var port =  process.env.port ||8000
 const io = require("socket.io")(`${port}`);
+io.origins('*:*')
+io.set('origins', 'https://eager-goldstine-b11445.netlify.app/');
 const users = {};
 
  io.on('connection', socket=>{
