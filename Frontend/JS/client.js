@@ -1,4 +1,10 @@
-const socket = io('https://hghghgjghg.herokuapp.com/');
+const io = require("socket.io-client");
+const socket = io("https://hghghgjghg.herokuapp.com/", {
+  withCredentials: true,
+  extraHeaders: {
+    "my-custom-header": "abcd"
+  }
+});
 
 const form = document.getElementById('send-container');
 const messageInput = document.getElementById('messageInp');
